@@ -251,9 +251,6 @@ const HomePage = () => {
             <Form.Item label="Reference" name="reference">
               <Input type="text" />
             </Form.Item>
-            <Form.Item label="Description" name="description">
-              <Input type="text" required />
-            </Form.Item>
             <div className="d-flex justify-content-end">
               <button
                 type="submit"
