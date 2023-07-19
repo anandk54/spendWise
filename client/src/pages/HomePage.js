@@ -99,9 +99,7 @@ const HomePage = () => {
       await axios.post("/transactions/delete-transaction", {
         transacationId: record._id,
       });
-      // setAllTransaction((record) =>
-      //   record.filter((item) => item.record._id !== record._id)
-      // );
+     
       setLoading(false);
       message.success("Transaction Deleted!");
     } catch (error) {
@@ -146,7 +144,7 @@ const HomePage = () => {
     <div className="">
       <Header />
       {loading && <Spinner />}
-      <div className="rounded-lg shadow ml-4 mr-4 dark:bg-gray-800">
+      <div className="rounded-lg shadow ml-4 mr-4 ">
         <div className="filters flex justify-between items-center p-6 ml-10 mr-10">
           <div>
             <h6 className="pb-2">Select Frequency</h6>
