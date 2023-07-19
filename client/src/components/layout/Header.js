@@ -15,7 +15,7 @@ const Header = () => {
     navigate("/login");
   };
   return (
-    <nav className="flex justify-between items-center bg-green-100 rounded-lg mt-3 ml-4 mr-4 dark:bg-gray-800 py-3 px-8">
+    <nav className="flex justify-between items-center bg-green-100 rounded-lg mt-3 ml-4 mr-4 py-3 px-8">
       <Link to="/">
         <div className="flex items-center ">
           <img
