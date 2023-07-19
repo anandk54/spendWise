@@ -12,7 +12,7 @@
 
 
 .switch-icons {
-/*     border: 1px solid rgba(0, 0, 0, 0.677); */
+    border: 1px solid rgba(0, 0, 0, 0.677);
     border-radius: 5px;
     padding: 10px 15px;
     padding-bottom: 15px;
@@ -24,7 +24,7 @@
   }
   
   .active-icon {
-/*     color: black; */
+    color: black;
   }
   .inactive-icon {
     color: gray;
