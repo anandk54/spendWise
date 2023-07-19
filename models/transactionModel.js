@@ -25,10 +25,7 @@ const transactionSchema = new mongoose.Schema(
     reference: {
       type: String,
     },
-    description: {
-      type: String,
-      required: [true, "desc is required"],
-    },
+    
   },
   { timestamps: true }
 );
