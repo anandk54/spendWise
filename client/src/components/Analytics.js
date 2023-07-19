@@ -49,8 +49,8 @@ const Analytics = ({ allTransaction }) => {
     <>
       <div className="row m-3 text-lg">
         <div className="col-md-3">
-          <div className="card block rounded-lg bg-white text-center  dark:bg-neutral-700">
-            <div className="card-header  border-neutral-100 px-6 py-3 dark:text-neutral-50">
+          <div className="card block rounded-lg bg-white text-center  ">
+            <div className="card-header  border-neutral-100 px-6 py-3 ">
               Total Transactions : {totalTransaction}
             </div>
             <div className="p-6">
@@ -79,8 +79,8 @@ const Analytics = ({ allTransaction }) => {
         </div>
 
         <div className="col-md-3">
-          <div className="card block rounded-lg bg-white text-center  dark:bg-neutral-700">
-            <div className="card-header  border-neutral-100 px-6 py-3 dark:text-neutral-50">
+          <div className="card block rounded-lg bg-white text-center  ">
+            <div className="card-header  border-neutral-100 px-6 py-3 ">
               Total TurnOver : {totalTurnover}
             </div>
             <div className="p-6">
@@ -109,8 +109,8 @@ const Analytics = ({ allTransaction }) => {
         </div>
 
         <div className="col-md-3">
-          <div className="card block rounded-lg bg-white text-center  dark:bg-neutral-700">
-            <div className="card-header  border-neutral-100 px-6 py-3 dark:text-neutral-50">
+          <div className="card block rounded-lg bg-white text-center  ">
+            <div className="card-header  border-neutral-100 px-6 py-3 ">
               Categorywise Income
             </div>
             <div className="p-2">
@@ -145,8 +145,8 @@ const Analytics = ({ allTransaction }) => {
           </div>
         </div>
         <div className="col-md-3">
-          <div className="card block rounded-lg bg-white text-center  dark:bg-neutral-700">
-            <div className="card-header  border-neutral-100 px-6 py-3 dark:text-neutral-50">
+          <div className="card block rounded-lg bg-white text-center  ">
+            <div className="card-header  border-neutral-100 px-6 py-3 ">
               Categorywise Expense
             </div>
             <div className="p-2">
