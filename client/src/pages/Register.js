@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { message } from "antd";
 
@@ -98,10 +98,10 @@ const Register = () => {
 
           <div className="text-grey-dark mt-6 text-lg">
             Already have an account?
-            <a href="../login/" className="text-blue-500 hover:text-blue-700">
+            <Link to="../login/" className="text-blue-500 hover:text-blue-700">
               {" "}
               Login.
-            </a>
+            </Link>
           </div>
         </div>
       </div>
