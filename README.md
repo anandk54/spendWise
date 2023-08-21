@@ -24,3 +24,9 @@ individual's needs.
 - Performed all CRUD
 
 # Screenshots
+![Home page](ss1.6.png)
+![Home page](ss1.5.png)
+![Home page](ss1.1.png)
+![Home page](ss1.2.png)
+![Home page](ss1.3.png)
+![Home page](ss1.4.png)
