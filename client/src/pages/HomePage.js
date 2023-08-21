@@ -23,6 +23,9 @@ const HomePage = () => {
   const [type, setType] = useState("all");
   const [viewData, setViewData] = useState("table");
   const [editable, setEditable] = useState(null);
+  const [refetch, setRefetch] = useState(false);
+
+  const [form] = Form.useForm();
 
   //table data
   const columns = [
@@ -69,6 +72,12 @@ const HomePage = () => {
     },
   ];
 
+  const handleCancel = () => {
+    setShowModal(false);
+    setEditable(null);
+    form.resetFields();
+  };
+
   //getall transaction
 
   //useEffect Hook
@@ -90,7 +99,7 @@ const HomePage = () => {
       }
     };
     getAllTransaction();
-  }, [frequency, selectedDate, type, setAllTransaction]);
+  }, [frequency, selectedDate, type, setAllTransaction, refetch]);
 
   //delete handler
   const handleDelete = async (record) => {
@@ -99,7 +108,7 @@ const HomePage = () => {
       await axios.post("/transactions/delete-transaction", {
         transacationId: record._id,
       });
-     
+
       setLoading(false);
       message.success("Transaction Deleted!");
     } catch (error) {
@@ -107,6 +116,7 @@ const HomePage = () => {
       console.log(error);
       message.error("unable to delete");
     }
+    setRefetch(!refetch);
   };
 
   // form handling
@@ -138,6 +148,7 @@ const HomePage = () => {
       setLoading(false);
       message.error("please fill all fields");
     }
+    setRefetch(!refetch);
   };
 
   return (
@@ -206,11 +217,12 @@ const HomePage = () => {
         <Modal
           title={editable ? "Edit Transaction" : "Add Transection"}
           open={showModal}
-          onCancel={() => setShowModal(false)}
+          onCancel={handleCancel}
           footer={false}
         >
           <Form
             layout="vertical"
+            form={form}
             onFinish={handleSubmit}
             initialValues={editable}
             className=""
