@@ -19,7 +19,7 @@ const Header = () => {
       <Link to="/">
         <div className="flex items-center ">
           <img
-            src={require("/home/anand/Desktop/Spend-wise/client/src/components/assets/logo.png")}
+            src={require('../../assets/logo.png')}
             alt="Logo"
             className="w-10 h-10 mr-2"
           />
@@ -28,7 +28,7 @@ const Header = () => {
       </Link>
       <div className="flex items-center">
         <img
-          src={require("/home/anand/Desktop/Spend-wise/client/src/components/assets/avatar.png")}
+          src={require('../../assets/avatar.png')}
           alt="avatar"
           className="w-15 h-10"
         />
